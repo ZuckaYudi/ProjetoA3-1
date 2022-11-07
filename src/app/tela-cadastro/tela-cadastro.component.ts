@@ -1,0 +1,16 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-tela-cadastro',
+  templateUrl: './tela-cadastro.component.html',
+  styleUrls: ['./tela-cadastro.component.css']
+})
+export class TelaCadastroComponent implements OnInit {
+  @Input() name: string = '';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
