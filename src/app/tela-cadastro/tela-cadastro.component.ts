@@ -6,11 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tela-cadastro.component.css']
 })
 export class TelaCadastroComponent implements OnInit {
+  
   @Input() name: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
