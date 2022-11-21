@@ -4,19 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { TelaCadastroComponent } from './tela-cadastro/tela-cadastro.component';
-import { AppRoutingModule } from './app-routing.module';
+
+const routes: Routes = [{ path: "punjab", component: TelaCadastroComponent }];
 
 @NgModule({
   declarations: [
     AppComponent,
     TelaLoginComponent,
-    TelaCadastroComponent
+    TelaCadastroComponent,
+    LoginComponent,
+    Login
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TelaLoginService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

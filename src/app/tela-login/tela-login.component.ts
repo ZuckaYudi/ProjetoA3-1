@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TelaLoginService } from './tela-login.service';
 
 @Component({
   selector: 'app-tela-login',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelaLoginComponent implements OnInit {
 
-  constructor() { }
+  telaLogin: any[];
+
+  constructor(private telaLoginService: TelaLoginService) { }
 
   ngOnInit(): void {
+    this.telaLogin = this.telaLoginService.getTelaLogin();
   }
 
 }
